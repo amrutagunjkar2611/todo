@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:powderblue;">
+
+    <div class="task-list text-center">
+        <h2><mark>Task List</mark></h2>
+        
+        <label>Task</label>
+        <input type="text" id="taskInput" class="form-control" required>
+
+        <button onclick="addTask()">Add Task</button>
+
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody id="taskBody">
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
